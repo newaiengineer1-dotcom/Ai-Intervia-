@@ -1,0 +1,44 @@
+{
+  "project": "Intervia Interview Intelligence",
+  "release_date": "2026-10-02",
+  "python": "3.12",
+  "architecture": "Streamlit + modular multi-agent Groq gateway",
+  "ui": {
+    "combined_interview_setup_tab": "Interview categories and Interview mode",
+    "industry_ui_removed": true,
+    "premium_dark_dashboard": true,
+    "new_interview_session_tab": true,
+    "professional_dashboard_reset": true,
+    "reset_preserves_groq_secret": true,
+    "ultra_hd_theme_palette": "#070B16 → #111827",
+    "glassmorphism_cards": true,
+    "neon_purple_cyan_glows": true,
+    "animated_waveform": true,
+    "adaptive_progress_stepper": true,
+    "ai_avatar_status_pulse": true,
+    "filler_word_highlighting": true,
+    "speech_analytics_chart": true,
+    "responsive_dashboard_layout": true,
+    "smooth_css_stage_transitions": true
+  },
+  "agents": [
+    "GroqGateway",
+    "EvidenceAgent",
+    "ResearchAgent",
+    "StrategyAgent",
+    "InterviewerAgent",
+    "CoachAgent"
+  ],
+  "features_added": [
+    "ultra_hd_dashboard_theme",
+    "new_interview_reset",
+    "ats_readiness_estimate",
+    "complete_session_pdf",
+    "animated_waveform",
+    "speech_analytics",
+    "filler_word_highlighting",
+    "adaptive_progress_stepper"
+  ],
+  "validation": "verify_project.py + py_compile + PYTHONPATH=. pytest (10 tests) + report smoke test + ZIP integrity",
+  "runtime_validation_note": "External dependency installation and real Groq/Streamlit Cloud execution require network access and a real project API key."
+}
